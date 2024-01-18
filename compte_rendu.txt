@@ -1,0 +1,21 @@
+
+// presentation + point sur realiser
+For begin with, we will make the bref the objectives of this project. it's a project where we have to sort des depeche in categories. 
+For this we should before create the glossary ourself. And after we  generate them automatically by algorythme.
+  
+In this project, we had to in first ,make one piece of code for the basis of the project. Create the class "Categorie" and "PaireChaineEntier". That will serve us all time in the next step.
+
+The second step is  to create several algorithm :
+- Many simple functions for make different thing. In The class "UtilitairePaireChaineEntier".
+- One algorithm for sorted the depeches by categorie, and then to compare we resultat that we have found by the true categorie of this depeche.
+
+The third step is create automatically the registre of words, that we create ourselves before.
+For the lexiques automatically we have need   to create the fonctions. "initDico","calculScores","poidsPourScore" and "generationLexique".
+
+
+The last step consists of test ours algo. 
+- Try to reduce the number of errors.
+- Reduce the time of execution.
+- Reduce the number of comparisons of our algo.
+
+  // presentation of result
