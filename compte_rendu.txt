@@ -52,6 +52,14 @@ It’s a decent score but it’s not perfect yet. I know I can still improve it 
 
 
 
+// conclusions
+There are many points that could be improved on this project. 
+- In the categorization results, we could increase the % of correct answers. By creating variations on the words,by adding the s in the end of word for example.
+- In number of comparisons when creating automatic registers. For example, sort the vector and have fewer comparisons to make. Or delete the usless words in the lexique.
+- We can try to create a lexicon with the root of the word to see if the program is better
+
+
+
 
 
 
