@@ -41,3 +41,24 @@ Now let's see the result of algorithm on the lexicons created automatically.
   ENVIRONNEMENT-SCIENCES:61%
   MOYENNE:70.0%
 It’s a decent score but it’s not perfect yet. I know I can still improve it but we will talk about it later in this report.
+-The execution time is between 600ms and 800ms.Execution time is between 600ms and 800ms. About 30% of the time is used to create the lexicon and 70% for classification.
+
+-The number of comparisons of my code is 1 427 304. Among these comparisons 1 327 945 are caused by the creation of lexicon and 99 359 by the classification.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
