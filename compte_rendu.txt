@@ -18,3 +18,15 @@ The last step consists of test and upgrade ours algo.
 - Reduce the number of comparisons of our algo.
 
   // presentation of result
+We will see the presentation of the results of the algorithm on the different lexicons:
+
+In first place we look the result of algorithm on the ourself lexicon:
+- The result of the good answers: 
+    SPORTS:95%
+    CULTURE:2%
+    POLITIQUE:37%
+    ECONOMIE:21%
+    ENVIRONNEMENT-SCIENCES:0%
+    MOYENNE:31.0%
+   Is not a verry good result because creating the lexicon takes a lot of time, And this not great importance for the following.
+-The execution time is between 60ms and 80ms 
