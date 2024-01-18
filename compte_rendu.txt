@@ -1,6 +1,6 @@
 // presentation + point sur realiser
 For begin with, we will make the bref the objectives of this project. it's a project where we have to sort des depeche in categories. 
-For this we should before create the glossary ourself. And after we  generate them automatically by algorythme.
+For this we should before create the lexicon ourself. And after we  generate them automatically by algorythme.
   
 In this project, we had to in first ,make one piece of code for the basis of the project. Create the class "Categorie" and "PaireChaineEntier". That will serve us all time in the next step.
 
