@@ -30,22 +30,6 @@ public class UtilitairePaireChaineEntier {
         }
     }
 
-    public static int entierPourIndice(ArrayList<PaireChaineEntier> listePaires,int entier){
-        // retourne l'indice associer a l'entier
-        int i=0;
-
-        while( (i < listePaires.size()) && (listePaires.get(i).getEntier() != entier)){
-            i++;
-        }// l'invariant est i < la taille du vecteur, et valeur observer est diffrerente de la valeur chercher
-
-        if( i == listePaires.size()){
-            return 0;
-        }else {
-            return i;
-        }
-
-    }
-
     public static String chaineMax(ArrayList<PaireChaineEntier> listePaires) {
         // retourne la chaine associé au plus grand entier de listePaires
 
@@ -94,25 +78,24 @@ public class UtilitairePaireChaineEntier {
                 }
                 j--;
             }
-
             i++;
         }
     }
 
-    public static int dichoIndice(ArrayList<PaireChaineEntier> v,String val) {
+    public static int dichoIndice(ArrayList<PaireChaineEntier> vPaires,String unString,int compteurComp) {
 
-        if (v.get(v.size() - 1).getChaine().compareTo(val) < 0) { // v.[v.size()-1] < val
-            return -v.size();
+        if ((vPaires.size() <= 0)||(unString.compareTo(vPaires.get(vPaires.size() - 1).getChaine()) > 0)) { // v.[v.size()-1] < val
+            return -vPaires.size()-1;
         } else { // v.[v.size()-1] ≥ val
             int inf = 0;
-            int sup = v.size() - 1; // invariant vérifié
+            int sup = vPaires.size() - 1; // invariant vérifié
             int m;
 
             while (inf < sup) {
 
                 m = (inf + sup) / 2;
 
-                if (v.get(m).getChaine().compareTo(val) >= 0) { // v[m] ≥ val
+                if (unString.compareTo(vPaires.get(m).getChaine()) <= 0){ // v[m] ≥ val
 
                     sup = m; // continuer de chercher à gauche sur [inf..m-1]
 
@@ -121,11 +104,13 @@ public class UtilitairePaireChaineEntier {
                     inf = m + 1; // continuer de chercher à droite sur [m+1..sup-1]
 
                 }
+                compteurComp += 1;
             }// inf = sup
-            if (v.get(sup).getChaine().compareTo(val) == 0) {
-                return sup; // val trouvée
+            if (vPaires.get(sup).getChaine().compareTo(unString) == 0) {
+                compteurComp += 1;
+                return inf; // val trouvée
             } else {
-                return -sup; // val pas trouvée, val aurait été à l'indice sup
+                return -inf-1; // val pas trouvée, val aurait été à l'indice sup
             }
         }
     }

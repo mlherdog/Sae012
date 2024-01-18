@@ -45,6 +45,11 @@ public class Categorie {
                     indice_double_point = ligne.indexOf(":"); // indice_double_point = la separation entre le mot et sont poids
                     mot = ligne.substring(0, indice_double_point);
                     poid_st = ligne.substring(indice_double_point + 1);
+
+                    if(poid_st.indexOf(":") != -1){
+                        poid_st = poid_st.substring(poid_st.indexOf(":")+1);
+                    }
+
                     poid_int = Integer.parseInt(poid_st);
 
                     resultat = new PaireChaineEntier(mot, poid_int);
