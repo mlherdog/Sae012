@@ -1,4 +1,3 @@
-
 // presentation + point sur realiser
 For begin with, we will make the bref the objectives of this project. it's a project where we have to sort des depeche in categories. 
 For this we should before create the glossary ourself. And after we  generate them automatically by algorythme.
@@ -7,7 +6,7 @@ In this project, we had to in first ,make one piece of code for the basis of the
 
 The second step is  to create several algorithm :
 - Many simple functions for make different thing. In The class "UtilitairePaireChaineEntier".
-- One algorithm for sorted the depeches by categorie, and then to compare we resultat that we have found by the true categorie of this depeche.
+- An algorithm to sort dispatches by category, then compare the results we found with the true category of that dispatch.and write they results in file.
 
 The third step is create automatically the registre of words, that we create ourselves before.
 For the lexiques automatically we have need   to create the fonctions. "initDico","calculScores","poidsPourScore" and "generationLexique".
