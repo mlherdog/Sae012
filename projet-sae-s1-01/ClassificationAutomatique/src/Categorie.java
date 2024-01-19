@@ -68,15 +68,18 @@ public class Categorie {
 
 
     //calcul du score d'une dépêche pour la catégorie
-    public int score(Depeche d) {
+    public Paireresultatcompteur<Integer> score(Depeche d) {
         int i=0;
         int score =0;
+        int compteur_Comp=0;
 
         while (i< d.getMots().size()){
             score += UtilitairePaireChaineEntier.entierPourChaine(lexique,d.getMots().get(i));
             i++;
+            compteur_Comp = compteur_Comp + 1;
         }// invariant chaque ellements de d.getMot ont été comparer a tout les ellement de lexique
-        return score;
+
+        return new Paireresultatcompteur<>(score,compteur_Comp);
     }
 
 

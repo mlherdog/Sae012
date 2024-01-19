@@ -82,14 +82,15 @@ public class UtilitairePaireChaineEntier {
         }
     }
 
-    public static int dichoIndice(ArrayList<PaireChaineEntier> vPaires,String unString,int compteurComp) {
+    public static Paireresultatcompteur<Integer> dichoIndice(ArrayList<PaireChaineEntier> vPaires,String unString) {
 
         if ((vPaires.size() <= 0)||(unString.compareTo(vPaires.get(vPaires.size() - 1).getChaine()) > 0)) { // v.[v.size()-1] < val
-            return -vPaires.size()-1;
+            return new Paireresultatcompteur<>(-vPaires.size()-1,1);
         } else { // v.[v.size()-1] ≥ val
             int inf = 0;
             int sup = vPaires.size() - 1; // invariant vérifié
             int m;
+            int compteurComp=0;
 
             while (inf < sup) {
 
@@ -108,9 +109,9 @@ public class UtilitairePaireChaineEntier {
             }// inf = sup
             if (vPaires.get(sup).getChaine().compareTo(unString) == 0) {
                 compteurComp += 1;
-                return inf; // val trouvée
+                return new Paireresultatcompteur<>(inf,compteurComp); // val trouvée
             } else {
-                return -inf-1; // val pas trouvée, val aurait été à l'indice sup
+                return new Paireresultatcompteur<>(-inf-1,compteurComp); // val pas trouvée, val aurait été à l'indice sup
             }
         }
     }

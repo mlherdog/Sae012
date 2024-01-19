@@ -1,6 +1,17 @@
-public class Paireresultatcompteur {
+public class Paireresultatcompteur<Res> {
+    private Res resultat;
+    private int compteur;
 
-    public int compteur;
+    Paireresultatcompteur(Res resutat,int compteur){
+        this.resultat = resutat;
+        this.compteur = compteur;
+    }
 
-    //constructeur
+    public int getCompteur(){
+        return compteur;
+    }
+
+    public Res getResultat() {
+        return resultat;
+    }
 }
