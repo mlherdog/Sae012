@@ -1,9 +1,11 @@
-// presentation + point sur realiser
+// presentation
 To begin, we will summarize the objectives of this project. This is a project where the objective is to sort a "test.txt" dispatch file. 
 Every dispatch will be rank in one of this 5 categories: sciences et environement , culture , economy , pilotics , sports.
 For this we will create 5 lexicons, containing the words corresponding to their category. first of all, we created the lexicon ourselves. Then we will create an algorithm to automatically create the lexicons.
-  
-In this project, we had to in first ,make one piece of code for the basis of the project. Create the class "Categorie" and "PaireChaineEntier". That will serve us all time in the next step.
+
+// realisation
+In this project, 
+we had to in first ,make one piece of code for the basis of the project. Create the class "Categorie" and "PaireChaineEntier". That will serve us all time in the next step.
 
 The second step is  to create several algorithm :
 - Many simple functions for make different thing. In The class "UtilitairePaireChaineEntier".
@@ -54,7 +56,7 @@ With this small number of successes we could ask ourselves the question: “the 
 But no, because when we test the algorithm on the lexicons with which it was trained. it has 99% correct answers.
 it's the fault of the lexicons, in the first the lexicons are not long enough. And in the second they is not enough accurate.
 
-
+// analyse de la complexité
 
 
 
