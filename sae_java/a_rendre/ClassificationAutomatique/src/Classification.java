@@ -92,8 +92,8 @@ public class Classification {
                 }
                 i++;
 
-            }// toutes les depeches ont été traitee et le resultat ecrit dans le fichier donee
-            file.write("----------------- % de bonnes reponses par categorie puis moyenne d e toutes les categories ----------------- \n");
+            }// toutes les depeches ont été traitee et le resultat ecrit dans le fichier donnee
+            file.write("----------------- % de bonnes reponses par categorie puis moyenne de toutes les categories ----------------- \n");
             // pourcentage de bonne reponses pour la categorie de chaque dépeche
             i = 0;
             while (i< vCat_Reusite.size()){
