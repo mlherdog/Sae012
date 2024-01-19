@@ -79,7 +79,7 @@ public class Classification {
                     compteurComp += resultat_compteur.getCompteur();
                     y++;
 
-                }// la depenche qui est entrain d'etre tratee a une note pour chaque categorie
+                }// la depenche qui est entrain d'etre traitee a une note pour chaque categorie
 
                 depecheTempChainemax = UtilitairePaireChaineEntier.chaineMax(score_total);// calcule de la categorie avec le score le plus élever
 
