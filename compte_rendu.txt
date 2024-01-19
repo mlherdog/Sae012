@@ -1,33 +1,35 @@
 // presentation
 To begin, we will summarize the objectives of this project. This is a project where the objective is to sort a "test.txt" dispatch file. 
-Every dispatch will be rank in one of this 5 categories: sciences et environement , culture , economy , pilotics , sports.
-For this we will create 5 lexicons, containing the words corresponding to their category. first of all, we created the lexicon ourselves. Then we will create an algorithm to automatically create the lexicons.
+Every dispatch will be ranked in one of these 5 categories: sciences et environement , culture , economy , pilotics , sports.
+For this, we will create 5 lexicons, containing the words corresponding to their category. First of all, we created the lexicon ourselves. Then we will create an algorithm to automatically create the lexicons.
 
 // realisation
 In this project, 
-we had to in first ,make one piece of code for the basis of the project. Create the class "Categorie" and "PaireChaineEntier". That will serve us all time in the next step.
+We had to first make one piece of code for the basis of the project. Create the classes "Categorie" and "PaireChaineEntier". That will serve us all the time in the next step.
 
-The second step is  to create several algorithm :
-- Many simple functions for make different thing. In The class "UtilitairePaireChaineEntier".
-- An algorithm to sort dispatches by category, thanks to the words of a lexicon. Then compare the results we found with the true category of that dispatch.and write they results in file.
+The second step is  to create several algorithms :
+There are many simple functions to make different things. In The class "UtilitairePaireChaineEntier".
+- An algorithm to sort dispatches by category, thanks to the words of a lexicon. Then compare the results we found with the true category of that dispatch. And write they results in file.
 
-The third step is create automatically the lexicon of words, that we create ourselves before.
-For lexicons automatically we have need to create the fonctions. "initDico","calculScores","poidsPourScore" and "generationLexique".
+The third step is to automatically create the lexicon of words, that we created ourselves before.
+For lexicons automatically, we have need to create the functions : "initDico","calculScores","poidsPourScore" and "generationLexique".
 
 I first put in calculScore an increment of 2 and a decrement of 1. My correct answer average was from 68%
 But I find that when I put an increment of 1 and a decrement of 3. My correct answer average increases up to 73%
 
 
-The last step consists of test and upgrade ours algo.
+The last step consists of testing and upgrading our algorithm.
 - Try to reduce the number of errors.
 - Count the number of comparisons and the execution time of the program.
 - Reduce the time of execution.
-- Reduce the number of comparisons of our algo.
+- Reduce the number of comparisons of our algorithm.
+
+To count the number of function comparisons, I chose to equip several functions thanks to the class "Paireresultatcompteur". 
 
   // presentation of result
 We will see the presentation of the results of the algorithm on the different lexicons:
 
-In first place we look the result of algorithm on the ourself lexicons:
+In the first place, we look at the result of the algorithm on yourself lexicons:
 - The result of the good answers: 
     SPORTS:95%
     CULTURE:2%
